@@ -1,0 +1,94 @@
+.container {
+  margin: 0px 80px 0px;
+}
+
+.delete-all {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 24px;
+  color: #556B84;
+  cursor: pointer;
+}
+
+.favorites {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 412px;
+  border: 1px solid #D3EAFF;
+
+  &__general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 412px;
+    max-height: 296px;
+  }
+
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #556B84;
+    font-size: 24px;
+    max-width: 347px;
+    text-align: center;
+  }
+
+  &__buttons {
+    margin: 64px 32px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &__button-buy {
+    font-family: 'Syne', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    background-color: #D3EAFF;
+    border: none;
+    padding: 12px 0px;
+    min-width: 278px;
+  }
+
+  &__button-favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border: none;
+    min-width: 53px;
+  }
+}

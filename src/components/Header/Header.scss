@@ -1,0 +1,76 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: rgba(30, 30, 30, 0.48);
+  z-index: 10;
+
+  &__logo-image {
+    max-width: 229px;
+    max-height: 42px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+
+  &__like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 53px;
+    min-height: 53px;
+    background-color: #ECECEC;
+    border: none;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #ed5871;
+      border-radius: 10%;
+    }
+  }
+
+  &__signup {
+    font-family: 'Syne', sans-serif;    display: flex;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    min-width: 163px;
+    padding: 12px 0px;
+    background-color: #D3EAFF;
+    border: none;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    
+    &:hover {
+      background-color: #4682B4;
+      border-radius: 40%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 20px 20px;
+  }
+
+  .buttons {
+    &__signup {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    padding: 20px 40px;
+  }
+}

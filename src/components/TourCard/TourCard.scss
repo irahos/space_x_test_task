@@ -1,0 +1,109 @@
+.title {
+  margin-top: 100px;
+  margin-inline: 80px;
+  font-family: 'Syne', sans-serif;
+  color: #1E1E1E;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.667vw;
+}
+
+.tour-cards {
+  margin: 40px 80px 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 412px;
+  border: 1px solid #D3EAFF;
+
+  &__general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    max-width: 412px;
+    max-height: 296px;
+  }
+
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__description {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #556B84;
+    font-size: 24px;
+    max-width: 347px;
+    text-align: center;
+  }
+
+  &__buttons {
+    margin: 64px 32px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  &__button-buy {
+    font-family: 'Syne', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    background-color: #D3EAFF;
+    border: none;
+    padding: 12px 0px;
+    min-width: 278px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: black;
+      color: #D3EAFF;
+    }
+  }
+
+  &__button-favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border: none;
+    min-width: 53px;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ed5871;
+      border-radius: 50%;
+    }
+
+    &--active {
+      background-color: #ed5871;
+      border-radius: 50%;
+    }
+  }
+}
+

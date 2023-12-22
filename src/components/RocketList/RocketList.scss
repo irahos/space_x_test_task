@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  margin-top: 100px;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  content: '\2192' !important;
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: '\2190' !important;
+}
