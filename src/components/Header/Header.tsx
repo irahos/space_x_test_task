@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom';
 export const Header:FC = () => {
   return (
     <header className='header'>
-      <div className='header__logo'>
+      <NavLink to='/' className='header__logo'>
         <img src={logo} alt="logo" className='header__logo-image'/>
-      </div>
+      </NavLink>
       <NavBar />
       <div className='buttons'>
         <NavLink to='/favorites' className='buttons__like'>
